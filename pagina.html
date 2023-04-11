@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Caculadora</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+        div#corpo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="corpo">
+        <div id="display">display</div>
+        <div>
+            <button>0</button>
+            <button>1</button>
+            <button>2</button>
+        </div>
+        <div>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+        </div>
+        <div>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+        </div>
+        <div>
+            <button>9</button>
+            <button>.</button>
+            <button>+</button>
+        </div>
+        <div>
+            <button>-</button>
+            <button>/</button>
+        </div>
+        <div>
+            <button>*</button>
+            <button>=</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let numero = 10;
+        numero = numero + 2;
+        let tagDisplay = document.getElementById("display")
+        tagDisplay.innerText = numero;
+    </script>
+</body>
+</html>
